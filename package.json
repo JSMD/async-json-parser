@@ -1,0 +1,21 @@
+{
+	"name": "async-json-parser",
+	"version": "1.0.0",
+	"description": "An async JSON parser made just for fun for JSMD community",
+	"main": "index.js",
+	"scripts": {
+		"benchmark": "node benchmark.js",
+		"test": "tap test.js --cov"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/JSMD/async-json-parser"
+	},
+	"keywords": [
+		"json",
+		"parser"
+	],
+	"author": "Nicu Micleușanu",
+	"license": "MIT",
+	"homepage": "https://github.com/JSMD/async-json-parser"
+}

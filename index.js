@@ -39,15 +39,16 @@ const isWhitespace = (value) => {
 	return (isTab || isLineFeed || isCarriageReturn || isSpace);
 };
 
+const streamOptions = {
+	writableObjectMode: false,
+	readableObjectMode: true
+};
+
 class AsyncJSONParser extends stream.Transform {
 
 	constructor() {
 
-		super();
-
-		// Set stream writable and writable states
-		this._writableState.objectMode = false;
-		this._readableState.objectMode = true;
+		super(streamOptions);
 
 		// Prepare parser members
 		this.chunk = null;
